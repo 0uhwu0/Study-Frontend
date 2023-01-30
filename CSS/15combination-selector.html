@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: chocolate;
+        }
+
+        /* 선텍자를 띄워쓰기 없이 연속 작성 */
+        /* 모든 조건을 만족하는 요소 선택 */
+        p.note {
+            background-color: yellow;
+        }
+
+        p.error {
+            text-decoration: line-through;
+        }
+
+        p.error.note {
+            border: 5px solid;
+        }
+
+        .note.error {
+            border: 10px dotted black;
+        }
+
+        h1.note.error {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.note*3>lorem3^p.note.error*3>lorem -->
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note">Aut, nostrum iure.</h1>
+    <h1 class="note error">Tempore, impedit quisquam.</h1>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus repudiandae quis velit quo qui et, obcaecati voluptates laudantium recusandae illum perspiciatis deleniti at, iste, modi cupiditate quas eum. Labore!</p>
+    <p class="note error">Suscipit illum nisi ad praesentium saepe tenetur neque voluptas fuga a earum. Dolor aut ut cumque incidunt quam officiis optio, deleniti esse eius voluptatibus id eum, voluptate laborum, porro exercitationem?</p>
+    <p class="note error">Eveniet placeat odio repellendus quos possimus neque doloribus perferendis impedit accusamus earum, ipsam libero soluta iusto nostrum numquam blanditiis fugit ex nobis repudiandae in tempore. Et reprehenderit voluptatum incidunt sed?</p>
+</body>
+</html>
