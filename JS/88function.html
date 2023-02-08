@@ -12,26 +12,45 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let a = 0; // 초기화
+    // 함수는 값
 
-    while (a < 5) { // 조건
-        console.log("a", a);
-        a++; // 조건 변경하는 코드
+    // 함수 선언(function declaration)
+    function fname(param) {
+        // 코드들...
     }
 
-    // for : 반복문
-    // (초기화 코드; 조건 코드; 변경 코드)
-
-    for(let b = 0; b < 5; b++) {
-        console.log("b", b);
+    // 함수식(function expression)
+    // 변수에 할당 가능
+    let d = function (param) {
+        // 코드들...
+        console.log("함수식으로 작성된 함수 내 코드를 실행...");
     }
 
-    // 변수 c 사용해서 5~1 출력
-    // for 코드 작성
+    d();
 
-    for(let c = 5; c > 0; c--) {
-        console.log("c", c );
+    // . 인수로 전달 가능
+    function e(param) {
+        
     }
+
+    e(function() {
+        // 명령문
+    });
+
+    // . 값으로 반환 가능
+    function f() {
+        return function () {
+            // 실행코드들....
+        }
+    }
+
+    // . 데이터 구조에 저장 가능
+    let g = ["css", function() {}];
+    let h = {
+        name: "park",
+        walk: function() {}
+    };
+
     </script>
 </body>
 </html>

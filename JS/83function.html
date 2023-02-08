@@ -12,26 +12,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let a = 0; // 초기화
+    // firtt-class function
+    // . 인수로 전달 가능
+    // . 값으로 반환 가능
+    // . 데이터 구조에 저장 가능
 
-    while (a < 5) { // 조건
-        console.log("a", a);
-        a++; // 조건 변경하는 코드
+    // . 변수에 할당 가능
+    function a() {
+        console.log("a라는 함수가 실행하는 코드들...");
     }
 
-    // for : 반복문
-    // (초기화 코드; 조건 코드; 변경 코드)
+    let b;
+    b = a;
 
-    for(let b = 0; b < 5; b++) {
-        console.log("b", b);
-    }
-
-    // 변수 c 사용해서 5~1 출력
-    // for 코드 작성
-
-    for(let c = 5; c > 0; c--) {
-        console.log("c", c );
-    }
+    a();
+    b();
     </script>
 </body>
 </html>

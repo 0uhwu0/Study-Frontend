@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,30 +9,44 @@
     <style>
     </style>
 </head>
+
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let a = 0; // 초기화
+        function a() {
+            console.log("파라미터 없는 함수");
+        }
+        a();
+        a(33);
 
-    while (a < 5) { // 조건
-        console.log("a", a);
-        a++; // 조건 변경하는 코드
-    }
+        function b(param1, param2) {
+            console.log("파라미터 2개 있는 함수");
+            console.log(param1, param2);
+        }
 
-    // for : 반복문
-    // (초기화 코드; 조건 코드; 변경 코드)
+        b();
+        b(99);
+        b(11, 22); // 인수는 매개변수 순서에 맞게 들어감
 
-    for(let b = 0; b < 5; b++) {
-        console.log("b", b);
-    }
+        function printDouble(num) {
+            let d = num * 2;
+            console.log(d);
+        }
 
-    // 변수 c 사용해서 5~1 출력
-    // for 코드 작성
+        printDouble(3); // 6
+        printDouble(4); // 8
+        printDouble(100); // 200
 
-    for(let c = 5; c > 0; c--) {
-        console.log("c", c );
-    }
+        function printSum(a, b) {
+            let c = a + b;
+            console.log(c);
+        }
+
+        printSum(3, 4); // 
+        printSum(100, 200); //300
+        printSum("java", "css") 
     </script>
 </body>
+
 </html>

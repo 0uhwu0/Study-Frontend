@@ -12,26 +12,28 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let a = 0; // 초기화
-
-    while (a < 5) { // 조건
-        console.log("a", a);
-        a++; // 조건 변경하는 코드
+    function a() {
+        console.log("java");
     }
 
-    // for : 반복문
-    // (초기화 코드; 조건 코드; 변경 코드)
+    a();
 
-    for(let b = 0; b < 5; b++) {
-        console.log("b", b);
+    // 함수 정의할 때 ()내에 parameter(매개변수) 목록 작성 가능
+    // 파라미터 이름은 lowerCamelCase 관습 따름
+    // 파라미터는 함수호출할 때 값을 받음
+    function b(param) {
+        // console.log("b함수 실행됨");
+        console.log(param);
     }
 
-    // 변수 c 사용해서 5~1 출력
-    // for 코드 작성
-
-    for(let c = 5; c > 0; c--) {
-        console.log("c", c );
-    }
+    b();
+    // argument(인수, 인자) : 전달하는 값
+    // b(3);
+    // // 4를 넣어서 b함수 호출 코드
+    // b(4);
+    // b("css");
+    // b([3, 4, 5]);
+    // b({address : "seoul", age: 33})
     </script>
 </body>
 </html>

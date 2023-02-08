@@ -12,26 +12,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let a = 0; // 초기화
+    // method : 객체가 가진 함수
 
-    while (a < 5) { // 조건
-        console.log("a", a);
-        a++; // 조건 변경하는 코드
-    }
+    let a = {
+        name: "kim",
+        age: 44,
+        drive: function() {
+            console.log("드라이브 함수 실행됨");
+        }
+    };
 
-    // for : 반복문
-    // (초기화 코드; 조건 코드; 변경 코드)
+    console.log(a.name);
+    console.log(a.age);
 
-    for(let b = 0; b < 5; b++) {
-        console.log("b", b);
-    }
-
-    // 변수 c 사용해서 5~1 출력
-    // for 코드 작성
-
-    for(let c = 5; c > 0; c--) {
-        console.log("c", c );
-    }
+    a.drive();
     </script>
 </body>
 </html>

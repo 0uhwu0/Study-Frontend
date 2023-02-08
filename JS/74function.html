@@ -12,26 +12,31 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let a = 0; // 초기화
-
-    while (a < 5) { // 조건
-        console.log("a", a);
-        a++; // 조건 변경하는 코드
+    function printHello() {
+        console.log("HELLO!!");
     }
 
-    // for : 반복문
-    // (초기화 코드; 조건 코드; 변경 코드)
-
-    for(let b = 0; b < 5; b++) {
-        console.log("b", b);
+    function printWorld() {
+        console.log("WORLD.");
     }
 
-    // 변수 c 사용해서 5~1 출력
-    // for 코드 작성
-
-    for(let c = 5; c > 0; c--) {
-        console.log("c", c );
+    function printHelloWorld() {
+        function newFunction() {
+            console.log("new function");
+        }
+        printHello();
+        printWorld();
+        return newFunction;
     }
+
+    // newFunction(); // 코드블럭 내에 정의, 선언된 함수여서 호출 안됨
+
+    // 함수실행(execute), 함수호출(call, invoke)
+    // printHello(); // 콘솔에 "HELLO!!"
+    // printWorld();
+    // printHelloWorld();
+    let a = printHelloWorld();
+    a();
     </script>
 </body>
 </html>
